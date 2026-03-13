@@ -40,17 +40,6 @@ export interface Publication {
   linkCode?: string;
 }
 
-export interface ChatMessage {
-  id: string;
-  role: 'user' | 'model';
-  text: string;
-  isThinking?: boolean;
-  sources?: Array<{
-    title: string;
-    uri: string;
-  }>;
-}
-
 export enum ViewState {
   HOME = 'HOME',
   RESUME = 'RESUME',
